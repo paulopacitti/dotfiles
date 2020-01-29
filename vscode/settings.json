@@ -1,0 +1,16 @@
+{
+  "window.zoomLevel": 0,
+  "editor.fontSize": 16,
+  "editor.renderLineHighlight": "none",
+  "breadcrumbs.enabled": false,
+  "editor.fontFamily": "Hack",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.minimap.enabled": false,
+  "explorer.openEditors.visible": 0,
+  "workbench.iconTheme": "file-icons",
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.colorTheme": "Quiet Light",
+}
