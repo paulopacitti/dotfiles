@@ -8,17 +8,17 @@ export LANG=en_US.UTF-8
 alias top="vtop"
 #custom cat with bat
 alias cat="bat"
+#python uses python3
+alias python="python3"
+alias pip="pip3"
 
 # LÖVE2D
 alias love="/Applications/love.app/Contents/MacOS/love"
-
 # node env
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-
 # ruby env
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # Android env vars
 export ANDROID_HOME="/Users/paulopacitti/Library/Android/sdk"
 export PATH=$ANDROID_HOME/tools:$PATH
@@ -32,5 +32,6 @@ eval $(thefuck --alias)
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/paulopacitti/google-cloud-sdk/path.bash.inc' ]; then . '/Users/paulopacitti/google-cloud-sdk/path.bash.inc'; fi
+
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/paulopacitti/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/paulopacitti/google-cloud-sdk/completion.bash.inc'; fi
