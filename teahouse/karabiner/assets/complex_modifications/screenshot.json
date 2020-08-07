@@ -1,0 +1,44 @@
+{
+  "title": "Screenshot",
+  "rules": [
+    {
+      "description": "Use PC print screen button for custom screen capture",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "print_screen"
+          },
+          "to_if_alone": {
+            "key_code": "4",
+            "modifiers": [
+              "left_command",
+              "left_shift"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "description": "Use PC print screen button for full screen capture",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "print_screen",
+            "modifiers": {
+              "mandatory": ["right_shift"]
+            }
+          },
+          "to": {
+            "key_code": "3",
+            "modifiers": [
+              "left_command",
+              "left_shift"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
