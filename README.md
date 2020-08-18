@@ -1,7 +1,7 @@
 # dotfiles :cd:
 - my dot files backup, can't code without this;
 - folders:
-  - **narnia** :mountain_snow: : Windows configs;
+  - **megatron** :robot: : Windows configs;
     - .ahk ([AutoHotKey](https://www.autohotkey.com/)): my [Motospeed GK82](https://i.imgur.com/rSCsy5C.jpg) keybindings for Windows;
   - **teahouse** :flower_playing_cards: : macOS (env files);
     - **karabiner** :keyboard: : my Motospeed GK82 keybindings for macOS;
