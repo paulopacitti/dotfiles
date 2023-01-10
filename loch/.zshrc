@@ -1,15 +1,26 @@
 export CLICOLOR=1
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-PROMPT="%F{yellow}%n%f %F{green}%m%f %F{blue}%1~%f ⛰  "
+PROMPT="%F{yellow}%n%f %F{green}%m%f %F{cyan}%1~%f ⛰  "
+
+alias history="history 1"
+HISTSIZE=99999  
+HISTFILESIZE=99999 
+SAVEHIST=$HISTSIZE
+
+setopt SHARE_HISTORY HIST_IGNORE_DUPS
 
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 bindkey "\e\e[D" backward-word
 bindkey "\e\e[C" forward-word
 
+alias arch-x86="env /usr/bin/arch -x86_64 /bin/zsh"
+alias arch-arm="env /usr/bin/arch -arm64 /bin/zsh"
+
+alias cat=bat
 alias docker=podman
-export DOCKER_HOST='unix:///Users/paulopacitti/.local/share/containers/podman/machine/podman-machine-default/podman.sock'
+alias docker-compose=podman-compose
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -23,4 +34,5 @@ export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
-export DOCKER_HOST='unix:///Users/paulopacitti/.local/share/containers/podman/machine/podman-machine-default/podman.sock'
+# Rust | SDL2 lib
+export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
