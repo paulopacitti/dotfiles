@@ -1,33 +1,124 @@
 {
-  "security.workspace.trust.untrustedFiles": "open",
-  "Lua.telemetry.enable": false,
-  "workbench.editor.enablePreview": false,
-  "editor.smoothScrolling": true,
+  "[bibtex]": {
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  },
+  "[c]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[go]": {
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[latex]": {
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.formatOnSave": false,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Editor
+  "breadcrumbs.enabled": false,
+  "diffEditor.renderSideBySide": false,
   "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineHeight": 1.35,
+  "editor.minimap.enabled": false,
   "editor.mouseWheelScrollSensitivity": 0.4,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
-  "editor.minimap.enabled": false,
-  "workbench.layoutControl.enabled": false,
-  "workbench.startupEditor": "none",
-  "editor.formatOnSave": true,
+  "editor.smoothScrolling": true,
   "explorer.confirmDelete": false,
-  "editor.fontSize": 16,
-  "editor.lineHeight": 1.4,
-  "terminal.integrated.fontSize": 14,
-  "dev.containers.dockerPath": "podman",
-  "dev.containers.dockerComposePath": "podman-compose",
-  "everforest.darkContrast": "hard",
-  "everforest.darkWorkbench": "flat",
-  "editor.fontLigatures": false,
-  "workbench.colorTheme": "Gruvbox Dark Medium",
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.currentLine.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.defaultDateStyle": "absolute",
+  "explorer.sortOrder": "type",
+  "git.openRepositoryInParentFolders": "always",
+  "github.copilot.enable": {
+    "*": true,
+    "go": true,
+    "markdown": false,
+    "plaintext": false,
+    "scminput": false,
+    "yaml": true
+  },
   "hexeditor.columnWidth": 16,
-  "hexeditor.showDecodedText": true,
   "hexeditor.defaultEndianness": "little",
   "hexeditor.inspectorType": "aside",
-  "diffEditor.renderSideBySide": false,
+  "hexeditor.showDecodedText": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "jupyter.askForKernelRestart": false,
+  "latex-workshop.latex.tools": [
+    {
+      "args": [
+        "--shell-escape", // added arg to default
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "%DOC%"
+      ],
+      "command": "latexmk",
+      "name": "latexmk"
+    },
+    {
+      "args": [
+        "--shell-escape", // added arg to default
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "command": "pdflatex",
+      "name": "pdflatex"
+    },
+    {
+      "args": [
+        "%DOCFILE%"
+      ],
+      "command": "bibtex",
+      "name": "bibtex"
+    }
+  ],
+  "python.defaultInterpreterPath": "/Users/paulopacitti/.pyenv/versions/3.11.2/bin/python",
+  "security.workspace.trust.untrustedFiles": "open",
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.fontSize": 14,
+  "window.commandCenter": false,
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 4,
+  "workbench.layoutControl.enabled": false,
+  "workbench.list.mouseWheelScrollSensitivity": 0.5,
+  "workbench.startupEditor": "none"
 }

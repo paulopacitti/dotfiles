@@ -1,3 +1,5 @@
+# -- zsh config
+
 export ZSH="$HOME/.oh-my-zsh"
 
 plugins=(
@@ -39,6 +41,8 @@ alias arch-x86="env /usr/bin/arch -x86_64 /bin/zsh"
 alias arch-arm="env /usr/bin/arch -arm64 /bin/zsh"
 
 export BAT_THEME="gruvbox-dark"
+
+# -- software config
 
 # fzf and fd config
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
