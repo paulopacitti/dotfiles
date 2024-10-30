@@ -7,6 +7,7 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   tmux
+  vi-mode
   z
 )
 
@@ -20,6 +21,11 @@ ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+
+VI_MODE_SET_CURSOR=true
+MODE_INDICATOR=""
+bindkey -M viins "jk" vi-cmd-mode
+export KEYTIMEOUT=20
 
 export CLICOLOR=1
 export LANG=en_US.UTF-8
