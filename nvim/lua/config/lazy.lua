@@ -17,11 +17,10 @@ require("lazy").setup({
       },
       import = "lazyvim.plugins",
     },
-
     { import = "plugins" },
   },
   defaults = {
-    lazy = false,
+    lazy = true,
     version = false, -- always use the latest git commit
   },
   checker = { enabled = false }, -- automatically check for plugin updates
