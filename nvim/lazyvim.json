@@ -2,8 +2,8 @@
   "extras": [
     "lazyvim.plugins.extras.ai.copilot-chat",
     "lazyvim.plugins.extras.editor.telescope",
-    "lazyvim.plugins.extras.formatting.black",
     "lazyvim.plugins.extras.formatting.prettier",
+    "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.typescript"
   ],
   "news": {
