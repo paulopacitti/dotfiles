@@ -1,4 +1,8 @@
 return {
-  -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
+  {
+    "ellisonleao/gruvbox.nvim",
+    opts = {
+      contrast = "hard",
+    },
+  },
 }
