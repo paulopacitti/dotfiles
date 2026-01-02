@@ -8,3 +8,11 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.spell = false
   end,
 })
+
+-- Enable autoformat only for certain files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "go", "lua" },
+  callback = function()
+    vim.b.autoformat = true
+  end,
+})

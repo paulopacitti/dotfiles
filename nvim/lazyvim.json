@@ -1,9 +1,10 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.ai.avante",
     "lazyvim.plugins.extras.editor.telescope",
-    "lazyvim.plugins.extras.formatting.prettier",
+    "lazyvim.plugins.extras.formatting.black",
     "lazyvim.plugins.extras.lang.go",
-    "lazyvim.plugins.extras.lang.typescript"
+    "lazyvim.plugins.extras.lang.json"
   ],
   "news": {
     "NEWS.md": "11866"

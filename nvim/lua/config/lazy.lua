@@ -12,15 +12,16 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     {
       "LazyVim/LazyVim",
+      import = "lazyvim.plugins",
       opts = {
         colorscheme = "gruvbox",
       },
-      import = "lazyvim.plugins",
     },
+
     { import = "plugins" },
   },
   defaults = {
-    lazy = true,
+    lazy = false,
     version = false, -- always use the latest git commit
   },
   checker = { enabled = false }, -- automatically check for plugin updates

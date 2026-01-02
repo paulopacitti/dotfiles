@@ -1,0 +1,13 @@
+background-opacity = 1.0
+bell-features=system
+confirm-close-surface=false
+font-family = "JetBrainsMonoNL Nerd Font Mono"
+font-size = 15
+font-thicken = true
+link-url = true
+macos-option-as-alt = true
+mouse-hide-while-typing=true
+shell-integration = zsh
+theme = "Gruvbox Dark Hard"
+window-padding-x = 16
+window-padding-y = 0,8
